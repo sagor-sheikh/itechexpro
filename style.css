@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Jost", sans-serif;
+}
+/* Top Bar Style */
+.set-border {
+  border-right: 2px solid #c1bed7;
+}
+/* Main Header Style */
+@media (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .header-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Hero Section */
+.bg-hero {
+  background-image: url("/img/HeroBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.25;
+}
+/* About Section */
+#about-bg {
+  background-image: url("/img/About.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* Contact Section */
+.contact-bg {
+  background-image: url("/img/contactBG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.25;
+  z-index: -1;
+}
+/* Contact section 2 */
+.clear-after::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contact-main {
+  background-image: url("/img/contactbg1.png");
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: contain;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.contact-form {
+  width: 500px;
+  height: 650px;
+  background-color: white;
+  color: black;
+}
+textarea {
+  resize: none;
+}
